@@ -77,88 +77,88 @@ const handleMouseMove = (
 
   return (
     <main className="bg-[#030712] text-white overflow-hidden">
+      
 {/* ================= POPUP ================= */}
 
 {showPopup && (
-  <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/75 px-4 backdrop-blur-md">
+  <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black/70 px-4 backdrop-blur-md">
 
-    {/* POPUP BOX */}
-    <div className="relative w-full max-w-2xl overflow-hidden rounded-[34px] border border-white/10 bg-[#020B1D] shadow-[0_25px_80px_rgba(0,0,0,0.75)]">
+    {/* POPUP */}
+    <div className="relative w-full max-w-xl overflow-hidden rounded-[28px] border border-white/10 bg-[#020B1D] shadow-[0_20px_60px_rgba(0,0,0,0.75)]">
 
-      {/* BACKGROUND GLOW */}
-      <div className="absolute right-[-120px] top-[-120px] h-[260px] w-[260px] rounded-full bg-orange-500/20 blur-3xl" />
+      {/* GLOW */}
+      <div className="absolute right-[-90px] top-[-90px] h-[220px] w-[220px] rounded-full bg-orange-500/20 blur-3xl" />
 
-      {/* CLOSE BUTTON */}
+      {/* CLOSE */}
       <button
         onClick={() => setShowPopup(false)}
-        className="absolute right-5 top-5 z-20 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-2xl font-bold text-white/70 backdrop-blur-xl transition duration-300 hover:bg-white hover:text-black"
+        className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-xl font-bold text-white/70 backdrop-blur-xl transition duration-300 hover:bg-white hover:text-black"
       >
         ×
       </button>
 
       {/* CONTENT */}
-      <div className="relative z-10 p-7 md:p-8">
+      <div className="relative z-10 p-6 md:p-7">
 
         {/* TITLE */}
-        <h2 className="max-w-xl text-4xl font-black leading-[1.05] tracking-[-0.03em] md:text-5xl">
+        <h2 className="text-3xl font-black leading-[1.05] tracking-[-0.03em] md:text-4xl">
 
           <span className="bg-gradient-to-r from-yellow-300 via-orange-500 to-red-600 bg-clip-text text-transparent">
-            ImpactLife School of
+            ImpactLife School
           </span>
 
-          <span className="mt-1 block bg-gradient-to-r from-orange-500 via-red-500 to-red-700 bg-clip-text text-transparent">
-            Priesthood
+          <span className="block bg-gradient-to-r from-orange-500 via-red-500 to-red-700 bg-clip-text text-transparent">
+            of Priesthood
           </span>
 
         </h2>
 
         {/* SUBTITLE */}
-        <p className="mt-4 text-xs font-black uppercase tracking-[0.35em] text-[#D4AF37]">
+        <p className="mt-2 text-[11px] font-black uppercase tracking-[0.35em] text-[#D4AF37]">
           2nd Batch 2026
         </p>
 
         {/* DESCRIPTION */}
-        <p className="mt-6 text-base leading-relaxed text-white/75">
+        <p className="mt-4 text-sm leading-relaxed text-white/75">
 
-          Applications are now open for the ImpactLife School of
-          Priesthood. A 3-month transformational discipleship journey
-          focused on raising believers who carry the life, character,
-          presence, and lifestyle of Jesus Christ.
+  Applications are now open for the ImpactLife School of
+  Priesthood. A 3-month transformational discipleship journey
+  focused on raising believers who carry the life, character,
+  presence, and lifestyle of Jesus Christ.
 
-          <br />
-          <br />
+  <br />
 
-          Through teachings, mentorship, prayer, the Word, and practical
-          spiritual development, participants will be equipped for deeper
-          intimacy with God, spiritual growth, Christ-like character,
-          and kingdom purpose.
+  Through teachings, mentorship, prayer, the Word, and practical
+  spiritual development, participants will be equipped for deeper
+  intimacy with God, spiritual growth, Christ-like character,
+  and kingdom purpose.
 
-        </p>
+</p>
 
         {/* INFO BOXES */}
-        <div className="mt-7 grid gap-4 md:grid-cols-2">
+        <div className="mt-5 grid grid-cols-2 gap-3">
 
           {/* APPLICATION */}
-          <div className="rounded-[22px] border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
+          <div className="rounded-[18px] border border-white/10 bg-white/5 p-4">
 
-            <p className="text-xs font-black uppercase tracking-[0.25em] text-[#D4AF37]">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37]">
               Application
             </p>
 
-            <h3 className="mt-3 text-2xl font-black text-white">
-              27 May – 10 June
+            <h3 className="mt-2 text-base font-black text-white">
+              20 May – 4 June
             </h3>
 
           </div>
 
           {/* FEE */}
-          <div className="rounded-[22px] border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
+          <div className="rounded-[18px] border border-white/10 bg-white/5 p-4">
 
-            <p className="text-xs font-black uppercase tracking-[0.25em] text-[#D4AF37]">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-[#D4AF37]">
               Fee
             </p>
 
-            <h3 className="mt-3 text-2xl font-black text-[#00FF95]">
+            <h3 className="mt-2 text-base font-black text-[#00FF95]">
               FREE
             </h3>
 
@@ -166,30 +166,30 @@ const handleMouseMove = (
 
         </div>
 
-        {/* TRAINING BAR */}
-        <div className="mt-4 rounded-[20px] border border-[#D4AF37]/20 bg-[#D4AF37]/5 px-5 py-4 text-center backdrop-blur-xl">
+        {/* TRAINING */}
+        <div className="mt-4 rounded-[18px] border border-[#D4AF37]/20 bg-[#D4AF37]/5 px-4 py-3 text-center backdrop-blur-xl">
 
-          <p className="text-lg font-bold text-[#D4AF37]">
+          <p className="text-sm font-bold text-[#D4AF37]">
             Online & onsite training available
           </p>
 
         </div>
 
         {/* BUTTONS */}
-        <div className="mt-6 flex flex-wrap gap-4">
+        <div className="mt-5 flex gap-3">
 
           <a
             href="https://forms.gle/Vq4TiBpcpAzjCfZP6"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#D4AF37] px-8 py-4 text-base font-black text-black transition duration-300 hover:scale-105"
+            className="rounded-full bg-[#D4AF37] px-6 py-3 text-sm font-black text-black transition duration-300 hover:scale-105"
           >
             APPLY NOW
           </a>
 
           <button
             onClick={() => setShowPopup(false)}
-            className="rounded-full border border-white/10 bg-white/5 px-8 py-4 text-base font-bold text-white/80 backdrop-blur-xl transition duration-300 hover:bg-white hover:text-black"
+            className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-bold text-white/80 backdrop-blur-xl transition duration-300 hover:bg-white hover:text-black"
           >
             Maybe Later
           </button>
