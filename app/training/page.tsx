@@ -226,7 +226,7 @@ export default function TrainingPage() {
           </p>
 
           <p className="mt-2 text-lg text-white/75">
-            2 participants per room throughout the training period.
+            2-4 participants per room throughout the training period.
           </p>
         </div>
 
@@ -236,7 +236,7 @@ export default function TrainingPage() {
           </p>
 
           <p className="mt-2 text-lg text-white/75">
-            ₦350,000 or $260 for the entire training duration.
+            ₦120,000 or $100 for the entire training session.
           </p>
         </div>
 

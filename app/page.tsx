@@ -9,6 +9,8 @@ import {
   MapPin,
   Mail,
   Phone,
+  Menu,
+  X,
 } from "lucide-react";
 
 export default function Home() {
@@ -17,6 +19,7 @@ export default function Home() {
   const [openWhy, setOpenWhy] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showPopup, setShowPopup] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 const handleMouseMove = (
   e: React.MouseEvent<HTMLDivElement>
 ) => {
@@ -28,26 +31,26 @@ const handleMouseMove = (
   const testimonials = [
     {
       image: "/test1.jpg",
-      name: "David O.",
-      text: "ISOP transformed my prayer life and consistency in the Word.",
+      name: "Mathew Saidu",
+      text: "I am from Shiroro, Niger state Nigeria. I got a deeper understanding of holiness and learned that, as believers, it should be our default state. I also learnt discipline in Bible study and gained spiritual intelligence.",
     },
 
     {
       image: "/test2.jpg",
-      name: "Sarah M.",
-      text: "I developed deeper intimacy with God and spiritual discipline.",
+      name: "Emmanuel Johnson",
+      text: "I'm from Uyo, Akwa Ibom State, Nigeria. I was always struggling with knowing the ways of God, reading the Bible, fasting and long prayers. When I saw the announcement on social media, I thought it was going to be like the training I've attended before in church. The training has helped me understand the scriptures more and even provided a structure to read through the whole Bible within a period of 3 months. Ever since I attended the class, my spiritual intelligence and growth has drastically improved. I now read the Bible everyday without missing, pray long hours, have accurate visions and most importantly know how to have a personal relationship with God. Another great benefit from the training is accountability. Even after the program I still keep logs of my spiritual activities. It's been such a transformative experience for me in my spiritual journey.",
     },
 
     {
       image: "/test3.jpg",
-      name: "Daniel A.",
-      text: "The teachings and mentorship transformed my spiritual life.",
+      name: "Stephen Gibson Jeremiah",
+      text: "I am from Gombe State, Nigeria. I experienced a great shift in my spiritual life. During the course of the training, my prayer life was ignited with fresh fire, and I gained the ability to pray consistently for long hours. I also experienced a shift in my knowledge and understanding of the Scriptures. Through daily study and meditation on God’s Word, my understanding of the Bible became deeper and clearer. I experienced a remarkable transformation in my dream life. Before now, I would either forget my dreams or only remember them after they came to pass. But during the training, that changed completely. I now dream, remember, and understand my dreams clearly, and many of them come to pass exactly as revealed. I experienced growth in my understanding of spiritual things. My eyes were opened to deeper spiritual realities, including: Spiritual Intelligence, Warfare, Satanic Manipulation and Understanding My Authority as a Believer.",
     },
 
     {
       image: "/test4.jpg",
-      name: "Grace E.",
-      text: "ISOP strengthened my understanding of priesthood and purpose.",
+      name: "Emmanuel Eromosele Omoataman",
+      text: "I'm from Lagos state, Nigeria. This training brought about the revival and the restoration of my spirit man; development of the spiritual gift of the Gospel work; Strengthen my ability in study of the scriptures. I have been to theological school and ministerial works for 13yrs but this is my first time I have ever red the Bible from Genesis to revelation and finish it within the ambit of 3 months. I got to understand spiritual intelligence in my prayer life and fasting. Crushing of the flesh and strengthen my spirituality in the Lord Jesus. Mouth cannot express all my encounters in the course. I give God all the glory.🙏🙏🙏 Note: no one will pass this course in spirit and in truth and remain the same.",
     },
 
     {
@@ -146,7 +149,7 @@ const handleMouseMove = (
             </p>
 
             <h3 className="mt-2 text-base font-black text-white">
-              20 May – 4 June
+              8 – 22 June
             </h3>
 
           </div>
@@ -221,66 +224,49 @@ const handleMouseMove = (
   {/* GOLD GLOW */}
   <div className="absolute left-1/2 top-0 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-[#D4AF37]/10 blur-3xl" />
 
-  {/* NAVBAR */}
-  <header className="relative z-30 border-b border-white/10 bg-black/20 backdrop-blur-md">
+ {/* NAVBAR */}
+<header className="relative z-30 border-b border-white/10 bg-black/20 backdrop-blur-md">
 
-    <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+  <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
 
-      {/* LOGO */}
-      <div>
+    <a href="/" className="flex items-center">
+      <img
+        src="/isop-logo.png"
+        alt="ImpactLife School of Priesthood"
+        className="h-16 w-auto object-contain"
+      />
+    </a>
 
-        <h2 className="bg-gradient-to-r from-yellow-300 via-orange-500 to-red-600 bg-clip-text text-2xl font-black text-transparent">
-          ISOP
-        </h2>
+    <nav className="hidden items-center gap-8 text-sm font-medium text-white/80 md:flex">
+      <a href="#about" className="transition hover:text-[#D4AF37]">About</a>
+      <a href="/training" className="transition hover:text-[#D4AF37]">Training</a>
+      <a href="#focus" className="transition hover:text-[#D4AF37]">Focus</a>
+      <a href="#testimonies" className="transition hover:text-[#D4AF37]">Testimonies</a>
+      <a href="#apply" className="transition hover:text-[#D4AF37]">Apply</a>
+    </nav>
 
-        <p className="text-[10px] uppercase tracking-[0.3em] text-white/50">
-          School of Priesthood
-        </p>
+    <button
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white md:hidden"
+    >
+      {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+    </button>
 
-      </div>
+  </div>
 
-      <nav className="hidden items-center gap-8 text-sm font-medium text-white/80 md:flex">
-
-  <a
-    href="#about"
-    className="transition hover:text-[#D4AF37]"
-  >
-    About
-  </a>
-
-  <a
-    href="/training"
-    className="transition hover:text-[#D4AF37]"
-  >
-    Training
-  </a>
-
-  <a
-    href="#focus"
-    className="transition hover:text-[#D4AF37]"
-  >
-    Focus
-  </a>
-
-  <a
-    href="#testimonies"
-    className="transition hover:text-[#D4AF37]"
-  >
-    Testimonies
-  </a>
-
-  <a
-    href="#apply"
-    className="transition hover:text-[#D4AF37]"
-  >
-    Apply
-  </a>
-
-</nav>
-
+  {mobileMenuOpen && (
+    <div className="border-t border-white/10 bg-[#030712]/95 backdrop-blur-xl md:hidden">
+      <nav className="flex flex-col px-6 py-6 text-white/80">
+        <a onClick={() => setMobileMenuOpen(false)} href="#about" className="py-3 hover:text-[#D4AF37]">About</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="/training" className="py-3 hover:text-[#D4AF37]">Training</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#focus" className="py-3 hover:text-[#D4AF37]">Focus</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#testimonies" className="py-3 hover:text-[#D4AF37]">Testimonies</a>
+        <a onClick={() => setMobileMenuOpen(false)} href="#apply" className="py-3 hover:text-[#D4AF37]">Apply</a>
+      </nav>
     </div>
+  )}
 
-  </header>
+</header>
 
   {/* HERO CONTENT */}
   <div className="relative z-20">
@@ -970,7 +956,7 @@ const handleMouseMove = (
               </p>
 
               <p className="mt-2 text-sm text-white/70">
-                impactlifeglobal@gmail.com
+                joinisop@gmail.com
               </p>
 
             </div>
@@ -1006,45 +992,51 @@ const handleMouseMove = (
       </div>
 
       {/* CONNECT */}
-<div className="lg:justify-self-end">
+<div>
+  <h4 className="mb-4 text-sm font-bold uppercase tracking-[0.2em] text-[#D4AF37]">
+    Connect
+  </h4>
 
-        <h3 className="text-sm font-bold uppercase tracking-[0.25em] text-[#D4AF37]">
-          Connect
-        </h3>
+  <div className="flex flex-col gap-3 text-white/70">
 
-        <div className="mt-6 flex flex-col gap-4 text-sm text-white/70">
+    <a
+      href="https://t.me/joinisop"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#D4AF37] transition"
+    >
+      Telegram
+    </a>
 
-          <a
-            href="#"
-            className="transition duration-300 hover:text-[#D4AF37]"
-          >
-            Telegram
-          </a>
+    <a
+      href="https://whatsapp.com/channel/0029Vb7TM6cCsU9HS8MkUi1q"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#D4AF37] transition"
+    >
+      WhatsApp
+    </a>
 
-          <a
-            href="#"
-            className="transition duration-300 hover:text-[#D4AF37]"
-          >
-            WhatsApp
-          </a>
+    <a
+      href="https://x.com/YOUR_X_HANDLE"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#D4AF37] transition"
+    >
+      Instagram
+    </a>
 
-          <a
-            href="#"
-            className="transition duration-300 hover:text-[#D4AF37]"
-          >
-            Instagram
-          </a>
+    <a
+      href="https://x.com/joinisop"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-[#D4AF37] transition"
+    >
+      X (Twitter)
+    </a>
 
-          <a
-            href="#"
-            className="transition duration-300 hover:text-[#D4AF37]"
-          >
-            X (Twitter)
-          </a>
-
-        </div>
-
-      </div>
+  </div>
+</div>
 
     </div>
 
