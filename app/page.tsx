@@ -956,7 +956,7 @@ const handleMouseMove = (
               </p>
 
               <p className="mt-2 text-sm text-white/70">
-                joinisop@gmail.com
+                isop@impactlifes.org
               </p>
 
             </div>
