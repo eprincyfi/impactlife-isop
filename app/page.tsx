@@ -118,7 +118,7 @@ const handleMouseMove = (
 
         {/* SUBTITLE */}
         <p className="mt-2 text-[11px] font-black uppercase tracking-[0.35em] text-[#D4AF37]">
-          2nd Batch 2026
+          3rd Batch 2026
         </p>
 
         {/* DESCRIPTION */}
@@ -149,7 +149,7 @@ const handleMouseMove = (
             </p>
 
             <h3 className="mt-2 text-base font-black text-white">
-              8 – 22 June
+              10 – 30 Sept
             </h3>
 
           </div>
@@ -182,7 +182,7 @@ const handleMouseMove = (
         <div className="mt-5 flex gap-3">
 
           <a
-            href="https://forms.gle/Vq4TiBpcpAzjCfZP6"
+            href="https://forms.gle/2v4DNYBDEk4uAhdK7"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-[#D4AF37] px-6 py-3 text-sm font-black text-black transition duration-300 hover:scale-105"
@@ -356,7 +356,7 @@ const handleMouseMove = (
         <div className="mt-10 flex flex-wrap gap-4">
 
           <a
-  href="https://forms.gle/Vq4TiBpcpAzjCfZP6"
+  href="https://forms.gle/2v4DNYBDEk4uAhdK7"
   target="_blank"
   rel="noopener noreferrer"
   className="rounded-full bg-gradient-to-r from-[#D4AF37] via-orange-500 to-red-600 px-10 py-5 text-lg font-black text-black shadow-[0_15px_40px_rgba(255,120,0,0.35)] transition duration-300 hover:scale-105"
@@ -844,7 +844,7 @@ const handleMouseMove = (
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
 
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#D4AF37]">
-            ISOP 2ND BATCH 2026
+            ISOP 3RD BATCH 2026
           </p>
 
           <h2 className="mt-8 text-5xl font-black text-white md:text-7xl">
@@ -858,7 +858,7 @@ const handleMouseMove = (
           <div className="mt-12">
 
             <a
-              href="https://forms.gle/Vq4TiBpcpAzjCfZP6"
+              href="https://forms.gle/2v4DNYBDEk4uAhdK7"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-gradient-to-r from-[#D4AF37] via-orange-500 to-red-600 px-12 py-5 text-lg font-black text-black"

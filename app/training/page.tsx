@@ -226,7 +226,7 @@ export default function TrainingPage() {
           </p>
 
           <p className="mt-2 text-lg text-white/75">
-            2-4 participants per room throughout the training period.
+            A few participants per room throughout the training period.
           </p>
         </div>
 
@@ -236,7 +236,7 @@ export default function TrainingPage() {
           </p>
 
           <p className="mt-2 text-lg text-white/75">
-            ₦120,000 or $100 for the entire training session.
+             We hope to provide free accommodation, but if we don't get sponsorship, participants will need to pay for their stay.
           </p>
         </div>
 
@@ -422,7 +422,7 @@ export default function TrainingPage() {
             </p>
 
             <h2 className="mt-6 text-4xl font-black leading-tight text-white md:text-6xl">
-              Join ISOP 2nd Batch 2026
+              Join ISOP 3rd Batch 2026
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/75">
@@ -430,7 +430,7 @@ export default function TrainingPage() {
             </p>
 
             <a
-              href="https://forms.gle/Vq4TiBpcpAzjCfZP6"
+              href="https://forms.gle/2v4DNYBDEk4uAhdK7"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-10 inline-flex rounded-full bg-gradient-to-r from-[#D4AF37] via-orange-500 to-red-600 px-10 py-5 text-lg font-black text-black shadow-[0_20px_60px_rgba(255,120,0,0.45)] transition duration-300 hover:scale-105"
